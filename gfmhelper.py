@@ -657,7 +657,7 @@ class GoProFrameMakerHelper():
             if(Path(args.image_magick_path).is_file()):
                 arguments["image_magick_path"] = Path(args.image_magick_path)
             else:
-                errors.append("{} file does not exists.".format(Path(args.fusion_sphere_params)))
+                errors.append("{} file does not exists.".format(Path(args.image_magick_path)))
                 status = False
         else:
             arguments["image_magick_path"] = 'magick'
